@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<label>
+    Выберите товар
+    [select* menu-302 id:select_item class:select_item "dynamic_select id:select_item"]
+</label>
+
+
+<label>
+    Где совершили покупку?
+    [select* menu-385 include_blank "Официальный сайт" "Ozon" "Wildberries" "Яндекс Маркет" "СберМегаМаркет" "ВсеИнструменты"]
+</label>
+
+<label>
+    Выберите дату покупки
+    [date* date-517 min:2022-01-01]
+</label>
+
+<label>
+    Ваш номер заказа
+    [text* text-555 placeholder "xxxxxxxx"]
+</label>
+
+<label>
+    Ваше имя
+    [text* text-744 placeholder "Иван"]
+</label>
+
+<label>
+    Ваш Email
+    [email* email-176 placeholder "ivan.ivanov@exempel.ru"]
+</label>
+
+<label>
+    Ваш номер телефона
+    [tel* tel-832 placeholder "+7 xxx xxx xx xx"]
+</label>
+
+[utm_source_i]<input type="hidden" name="utm_source" value="%s" />[/utm_source_i]
+[utm_medium_i]<input type="hidden" name="utm_medium" value="%s" />[/utm_medium_i]
+[utm_term_i]<input type="hidden" name="utm_term" value="%s" />[/utm_term_i]
+[utm_content_i]<input type="hidden" name="utm_content" value="%s" />[/utm_content_i]
+
+[recaptcha]
+[submit "Отправить"]
